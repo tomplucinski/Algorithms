@@ -1,3 +1,3 @@
 # Algorithms
 
-Algorithms and programming practice
+Algorithms and coding challenges

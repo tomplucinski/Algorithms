@@ -13,4 +13,6 @@ function checkExam(array1, array2) {
     }
     
     return score > 0 ? score : 0
-  }
+}
+
+checkExam()
