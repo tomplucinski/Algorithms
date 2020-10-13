@@ -1,0 +1,1 @@
+Determine whether the target number is in the array utilizing binary search.
