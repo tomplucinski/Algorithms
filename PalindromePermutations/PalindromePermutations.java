@@ -1,11 +1,21 @@
 import java.util.HashMap;
+import java.util.Set;
 
 public class PalindromePermutation {
 
     public static boolean hasPalindromePermutation(String theString) {
+        Set<Character> uppairedCharacters = new HashSet<>();
 
-        HashMap<Character, Integer> map = new HashMap<>();
+        for (int  i = 0; i < theString.length(); i++) {
+            char currentChar = theString.charAt(i);
 
-        return false;
+            if (uppairedCharacters.contains(currentChar)) {
+                uppairedCharacters.remove(currentChar);
+            } else {
+                uppairedCharacters.add(currentChar);
+            }
+        }
+
+        return uppairedCharacters.size() <= 1;
     }
 }
