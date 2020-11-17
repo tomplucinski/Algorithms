@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Set;
 
-public class PalindromePermutation {
+public class PalindromePermutations {
 
     public static boolean hasPalindromePermutation(String theString) {
         Set<Character> uppairedCharacters = new HashSet<>();
